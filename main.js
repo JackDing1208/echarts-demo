@@ -22,8 +22,10 @@ var option1 = {
 
 // 使用刚指定的配置项和数据显示图表。
 chart1.setOption(option1);
-
-
+setTimeout(()=>{
+    option1.title.text='数据没有实现响应式更新'
+    chart1.setOption(option1);
+},5000)
 var chart2 = echarts.init(document.getElementById('xxx2'), 'dark');
 
 // 指定图表的配置项和数据
